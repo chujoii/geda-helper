@@ -95,3 +95,71 @@ Next steps:
 
 
 psselect 3 Seven-segment_display.ps z.ps
+
+--------------------------------------------------------------------------------
+новая версия
+
+для SOT23 (Small Outline Transistor) транзистора нужно указать базу коллектор эмиттер (сток исток затвор)
+
+
+http://www.geda.seul.org/wiki/geda:transistor_guide
+Surface Mount Transistors: The SOT (Small Outline Transistor) packages are much more standard than the TO packages and the pins are consistently numbered counterclockwise from the top left as are IC packages. But for a transistor that has a TO and a SOT version, you can't simply change the footprint attribute on the schematic because the package pin numbers don't map the same to the emitter, base, and collector. You need a separate gschem symbol for them. For example: 2N3904.sym for the TO and MMBT3904.sym for the SOT.
+
+
+http://www.geda.seul.org/mailinglist/geda-user60/msg00042.html
+http://www.geda.seul.org/wiki/
+http://www.geda.seul.org/mailinglist/geda-user60/msg00060.html
+https://bugs.launchpad.net/geda/+bug/698821
+
+less /usr/share/gEDA/sym/analog/nmos-3.sym
+
+
+
+* xgsch2pcb
+  
+  после создания файла *.gsch2pcb
+  добавить в него пути к footprint:
+  -------- -------- 8< -------- --------
+  ...
+  elements-dir /home/chujoii/project/geda/footprints-geda
+  elements-dir /home/chujoii/project/geda/footprints-my
+  ...
+  -------- -------- >8 -------- --------
+
+  
+  файл ~/.gafrc должен выглядеть примерно так:
+  -------- -------- 8< -------- --------
+  ...
+  (component-library "/home/chujoii/project/geda/symbols-my")
+  (component-library "/home/chujoii/project/geda/symbols-geda")
+  
+  или так
+  (source-library "…")
+  (component-library "${HOME}/geda/symbols/analog")
+  (component-library
+  "/envy/dj/geda/gedasymbols/www/user/dj_delorie/symbols/misc"
+  "gedasymbols/dj/misc") ; Any character is valid in this argument.
+  ...
+  -------- -------- >8 -------- --------
+
+
+* sym
+ 
+
+на ножке "ee" вызывает редактирование
+ 
+
+| pintype | description               |
+|---------+---------------------------|
+| in      | Input                     |
+| out     | Output                    |
+| io      | Input/Output              |
+| oc      | Open collector            |
+| oe      | Open emitter              |
+| pas     | Passive                   |
+| tp      | Totem pole                |
+| tri     | Tristate (high impedance) |
+| clk     | Clock                     |
+| pwr     | Power/Ground              |
+|         |                           |
+

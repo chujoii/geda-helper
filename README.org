@@ -1,0 +1,97 @@
+README.org ---  description
+
+
+
+Copyright (C) 2009 Roman V. Prikhodchenko
+
+
+
+Author: Roman V. Prikhodchenko <chujoii@gmail.com>
+
+  
+
+  This file is part of geda_library.
+  
+  geda_library is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  geda_library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU General Public License
+  along with geda_library.  If not, see <http://www.gnu.org/licenses/>.
+  
+  
+  
+* Keywords:
+  
+  
+
+* Description:
+  
+  
+  
+* Usage:
+  
+  read with emacs (3__3) org mode
+  
+  
+  
+  
+* History:
+  
+  initial project version began about 2009.10(Oct).20.
+  
+* Dependences:
+* Code  
+
+
+  
+  
+  
+имена должны быть в таком виде (не нужно использовать "-")
+
+
+r_aeou5
+|||   |
+|||   |
+|||   L цифирка
+|||
+||L слово или буква
+||
+|L подчёркивание
+|
+L буква или слово
+
+
+gnetlist -g drc2 Seven-segment_display.sch -o drc_output.txt
+gnetlist -g spice-sdb -o z.net Seven-segment_display.sch
+gsch2pcb -d ../footprints Seven-segment_display.sch
+
+
+
+
+
+
+Next steps:
+1.  Run pcb on your file Seven-segment_display.pcb.
+2.  From within PCB, select "File -> Load layout data to paste buffer"
+    and select Seven-segment_display.new.pcb to load the new footprints into your existing layout.
+3.  From within PCB, select "File -> Load netlist file" and select 
+    Seven-segment_display.net to load the updated netlist.
+
+4.  From within PCB, enter
+
+           :ExecuteFile(/home/chujoii/rel/Seven-segment_display/Seven-segment_display.cmd)
+
+	   (":" не нужно если через меню)
+
+    to update the pin names of all footprints.
+
+
+
+psselect 3 Seven-segment_display.ps z.ps

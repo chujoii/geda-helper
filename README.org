@@ -143,6 +143,9 @@ less /usr/share/gEDA/sym/analog/nmos-3.sym
   -------- -------- >8 -------- --------
 
 
+  Don't use diode-1.sym when using PCB
+  diode-3 is OK.
+
 * sym
  
 

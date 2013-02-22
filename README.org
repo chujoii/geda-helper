@@ -50,7 +50,20 @@ Author: Roman V. Prikhodchenko <chujoii@gmail.com>
 * Code  
 
 
-  
+  > create a hierarchy?  
+
+(1) Create each page as a separate .sch file.
+
+(2) Use the autonumbering dialog to number your parts, with refdes starting 
+from 100 on the first page, 200 on the second page, 300 on the third page, 
+etc.
+
+refdes_renum --force --pgskip 100 1.sch
+refdes_renum --force --pgskip 200 2.sch
+
+(3) Put *all* the .sch files as arguments to the gnetlist (or gsch2pcb) 
+invocation.
+
   
   
 имена должны быть в таком виде (не нужно использовать "-")
@@ -67,10 +80,18 @@ r_aeou5
 |
 L буква или слово
 
+gsch2pcb --help  говорит что стандартные пути для footprint:
+/usr/local/share/pcb/newlib, /usr/share/pcb/newlib, (old pcb) /usr/local/lib/pcb_lib, /usr/lib/pcb_lib, (old pcb) /usr/local/pcb_lib
 
+найти все ошибки:
 gnetlist -g drc2 Seven-segment_display.sch -o drc_output.txt
+
+построить netlist (наверное это лишнее):
 gnetlist -g spice-sdb -o z.net Seven-segment_display.sch
+
+
 gsch2pcb -d ../footprints Seven-segment_display.sch
+
 
 
 
@@ -112,6 +133,14 @@ http://www.geda.seul.org/mailinglist/geda-user60/msg00060.html
 https://bugs.launchpad.net/geda/+bug/698821
 
 less /usr/share/gEDA/sym/analog/nmos-3.sym
+
+
+гребёнка или колодка штырьков
+PBS-10 однорядный,10 контактов
+PBD-40 двухрядный, 2 ряда по 20 контактов
+
+Если в конце R то угловой.
+Ответная часть по томуже принципу маркируется только PLS/PLD 
 
 
 

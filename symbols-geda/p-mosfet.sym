@@ -1,4 +1,4 @@
-v 20060123 1
+v 20121123 2
 L 400 550 400 250 3 0 0 0 -1 -1
 L 400 500 600 500 3 0 0 0 -1 -1
 L 400 300 500 300 3 0 0 0 -1 -1
@@ -36,3 +36,9 @@ T 0 0 9 10 0 0 0 0 1
 dist-license=GPL
 T 0 0 9 10 0 0 0 0 1
 use-license=unlimited
+T 200 950 5 10 0 0 0 0 1
+description=P-Channel MOSFET
+T 200 1150 5 10 0 0 0 0 1
+device=MOSFET P-Channel
+T 550 700 8 10 1 1 0 6 1
+refdes=Q?

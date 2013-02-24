@@ -170,6 +170,8 @@ PBD-40 двухрядный, 2 ряда по 20 контактов
   "gedasymbols/dj/misc") ; Any character is valid in this argument.
   ...
   -------- -------- >8 -------- --------
+  не забудьте создать в каталоге проекта символическую ссылку на него
+  ln -s ~/gafrc gafrc
 
 
   Don't use diode-1.sym when using PCB

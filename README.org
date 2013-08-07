@@ -177,6 +177,18 @@ PBD-40 двухрядный, 2 ряда по 20 контактов
   Don't use diode-1.sym when using PCB
   diode-3 is OK.
 
+
+
+* geda pcb
+  | key     | descriptino                                                                                                                                                         |
+  |---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Shift-m | move to active side (for example rectangre)                                                                                                                         |
+  | b       | If you are viewing one side of the board, place a component there and (with the cursor over it) press the [b] key (wich means, send the component to the Back side) |
+  |         |                                                                                                                                                                     |
+  
+   
+
+
 * sym
  
 

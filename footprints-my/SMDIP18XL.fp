@@ -1,0 +1,30 @@
+
+Element["selected" "" "" "" 4.0667mm 55.10mil 0.0000 0.0000 0 100 "selected"]
+(
+	Pad[-125.00mil 0.0000 0.0000 0.0000 50.00mil 20.00mil 60.00mil "" "1" "selected,square"]
+	Pad[-125.00mil 100.00mil 0.0000 100.00mil 50.00mil 20.00mil 60.00mil "" "2" "selected,square"]
+	Pad[-125.00mil 200.00mil 0.0000 200.00mil 50.00mil 20.00mil 60.00mil "" "3" "selected,square"]
+	Pad[-125.00mil 300.00mil 0.0000 300.00mil 50.00mil 20.00mil 60.00mil "" "4" "selected,square"]
+	Pad[-125.00mil 400.00mil 0.0000 400.00mil 50.00mil 20.00mil 60.00mil "" "5" "selected,square"]
+	Pad[-125.00mil 500.00mil 0.0000 500.00mil 50.00mil 20.00mil 60.00mil "" "6" "selected,square"]
+	Pad[-125.00mil 600.00mil 0.0000 600.00mil 50.00mil 20.00mil 60.00mil "" "7" "selected,square"]
+	Pad[-125.00mil 700.00mil 0.0000 700.00mil 50.00mil 20.00mil 60.00mil "" "8" "selected,square"]
+	Pad[-125.00mil 800.00mil 0.0000 800.00mil 50.00mil 20.00mil 60.00mil "" "9" "selected,square"]
+	
+	Pad[600.00mil 800.00mil 725.00mil 800.00mil 50.00mil 20.00mil 60.00mil "" "10" "selected,square,edge2"]
+	Pad[600.00mil 700.00mil 725.00mil 700.00mil 50.00mil 20.00mil 60.00mil "" "11" "selected,square,edge2"]
+	Pad[600.00mil 600.00mil 725.00mil 600.00mil 50.00mil 20.00mil 60.00mil "" "12" "selected,square,edge2"]
+	Pad[600.00mil 500.00mil 725.00mil 500.00mil 50.00mil 20.00mil 60.00mil "" "13" "selected,square,edge2"]
+	Pad[600.00mil 400.00mil 725.00mil 400.00mil 50.00mil 20.00mil 60.00mil "" "14" "selected,square,edge2"]
+	Pad[600.00mil 300.00mil 725.00mil 300.00mil 50.00mil 20.00mil 60.00mil "" "15" "selected,square,edge2"]
+	Pad[600.00mil 200.00mil 725.00mil 200.00mil 50.00mil 20.00mil 60.00mil "" "16" "selected,square,edge2"]
+	Pad[600.00mil 100.00mil 725.00mil 100.00mil 50.00mil 20.00mil 60.00mil "" "17" "selected,square,edge2"]
+	Pad[600.00mil 0.0000 725.00mil 0.0000 50.00mil 20.00mil 60.00mil "" "18" "selected,square,edge2"]
+	ElementLine [-50.00mil -50.00mil -50.00mil 850.00mil 10.00mil]
+	ElementLine [-50.00mil 850.00mil 659.00mil 850.00mil 10.00mil]
+	ElementLine [659.00mil 850.00mil 659.00mil -50.00mil 10.00mil]
+	ElementLine [-50.00mil -50.00mil 255.00mil -50.00mil 10.00mil]
+	ElementLine [355.00mil -50.00mil 659.00mil -50.00mil 10.00mil]
+	ElementArc [305.00mil -50.00mil 50.00mil 50.00mil 0 180 10.00mil]
+
+	)
